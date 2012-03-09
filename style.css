@@ -15,16 +15,21 @@ p {
 }
 ol {
   color: #333;
-  margin-left: 0.8em;
-  margin-top: 1.5em;
+  margin: 1.5em 0.8em;
 }
 ol li {
   font-size: 1.0em;
   margin-top: 0.5em;
 }
+a {
+  color: #1041a3;
+}
+a:visited {
+  color: purple;
+}
 a.bookmarklet {
   padding: 0.2em;
-  background: #ddd;
-  border: 1px solid blue;
+  background: #eaeaea;
+  border: 1px solid #1041a3;
   text-decoration: none;
 }
