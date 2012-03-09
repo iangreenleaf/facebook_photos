@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>Facebook Photo Bookmarklet - Throw off the shackles of the oppressor!</title>
+  <link href='style.css' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:700' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <h1>Facebook Photo Bookmarklet</h1>
@@ -19,7 +22,7 @@
 
     <li>
     Drag this link to your bookmarks:
-    <a href='javascript:(function(){var a,i;a=document.querySelectorAll(".uiMediaThumb i");var b="";for(i=0;i<a.length;i++){var c=a[i].style.backgroundImage;var d=c.replace(/^url\("?(.*[^"])"?\)/,"$1");var e=d.replace(/_a\.jpg/,"_n.jpg");b=b+"<img src=\""+e+"\" />"}document.body.innerHTML=b})();'>Get photos</a>
+    <a class="bookmarklet" href='javascript:(function(){var a,i;a=document.querySelectorAll(".uiMediaThumb i");var b="";for(i=0;i<a.length;i++){var c=a[i].style.backgroundImage;var d=c.replace(/^url\("?(.*[^"])"?\)/,"$1");var e=d.replace(/_a\.jpg/,"_n.jpg");b=b+"<img src=\""+e+"\" />"}document.body.innerHTML=b})();'>Get photos</a>
     </li>
 
     <li>
