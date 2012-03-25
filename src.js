@@ -1,12 +1,8 @@
 javascript:(function() {
 var thumbs, i;
-thumbs = document.querySelectorAll(".uiMediaThumb i");
-var html = "";
-for (i=0; i < thumbs.length; i++) {
-  var thumb = thumbs[i].style.backgroundImage;
-  var url = thumb.replace(/^url\("?(.*[^"])"?\)/,"$1");
-  var good_url = url.replace(/_a\.jpg/, "_n.jpg");
-  html = html + "<img src=\"" + good_url + "\" />";
+links = document.querySelectorAll(".archiveLink");
+for (i=0; i < links.length; i++) {
+  links[i].setAttribute("ajaxify", links[i].attributes.ajaxify.value.replace(/action=tag/, "action=delete"));
+  links[i].setAttribute("title", "Delete");
 }
-document.body.innerHTML = html;
 })();
