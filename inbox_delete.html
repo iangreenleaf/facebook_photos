@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Facebook Inbox Delete - Get your data gone</title>
+  <link href='style.css' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&text=FacebookPhotoBookmarklet' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <h1>Facebook Inbox Delete</h1>
+  <a href="https://github.com/iangreenleaf/facebook_photos"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/4c7dc970b89fd04b81c8e221ba88ff99a06c6b61/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub"></a>
+  <p>Your message inbox in Facebook has an "X" button, but it doesn't actually delete messages, just archives them. Deleting one by one is extremely slow and boring.</p>
+
+  <p><strong>Screw that.</strong> Here's a bookmarklet to make your life easier.</p>
+
+  <ol>
+    <li>
+    Use a modern browser. None of this Internet Explorer shit.
+    </li>
+
+    <li>
+    Drag this link to your bookmarks:
+    <a class="bookmarklet" href='javascript:(function(){var thumbs,i;links=document.querySelectorAll(".archiveLink");for(i=0;i<links.length;i++){links[i].setAttribute("ajaxify",links[i].attributes.ajaxify.value.replace(/action=tag/,"action=delete"));links[i].setAttribute("title","Delete");}})();'>Get photos</a>
+    </li>
+
+    <li>
+    In Facebook, click on your own name, then click on Messages.
+    </li>
+
+    <li>
+    Click on the bookmark. All the "X" links should now be links to delete a message with one click.
+    </li>
+  </ol>
+
+  <p>Problems? Suggestions? <a href="https://github.com/iangreenleaf/facebook_photos/issues">Raise an issue on Github.</a></p>
+
+  <p>Created by <a href="http://www.iangreenleaf.com">Ian Young</a>.</p>
+</body>
